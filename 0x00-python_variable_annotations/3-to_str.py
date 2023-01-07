@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
+''' Description:takes a float n as argument and returns the string
+    representation of the float.
+    Arguments: n: float
+'''
 
-import math
 
-floor = __import__('2-floor').floor
-
-ans = floor(3.14)
-
-print(ans == math.floor(3.14))
-print(floor.__annotations__)
-print("floor(3.14) returns {}, which is a {}".format(ans, type(ans)))
+def to_str(n: float) -> str:
+    ''' Return n as a string. '''
+    return str(n)
